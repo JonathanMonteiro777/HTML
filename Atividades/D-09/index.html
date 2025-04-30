@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Vídeos</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .grid-videos {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+            gap: 5px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .grid-videos a img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+
+        .grid-videos a img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .grid-videos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Vídeos legais para assistir</h1>
+
+    <div class="grid-videos">
+        <a href="pagHTML/index.html"><img src="img/thumb-html.png" alt="imagem do curso de html"></a>
+        <a href="pagJS/index.html"><img src="img/thumb-js.png" alt="imagem do curso de javascript"></a>
+        <a href="pagHardware/index.html"><img src="img/thumb-hardware.png" alt="Curso de Hardware"></a>
+        <a href="paPython/index.html"><img src="img/thumb-python.png" alt="curso de python"></a>
+    </div>
+</body>
+
+</html>

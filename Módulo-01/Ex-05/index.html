@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#DevWeb - Capítulo 07: Hierarquia de Títulos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="conteudo-principal">
+        <article class="aula">
+            <header class="aula-cabecalho">
+                <h1 class="aula-titulo">#DevWeb - Capítulo 07: Hierarquia de Títulos</h1>
+                <p class="aula-info">Prof. Gustavo Guanabara</p>
+            </header>
+
+            <section id="introducao" class="secao-aula">
+                <h2 class="secao-titulo">Entendendo a hierarquia de títulos</h2>
+                <p class="texto-aula">Vamos agora começar a falar sobre organização de conteúdo. Ainda teremos muito mais capítulos falando sobre isso daqui pra frente, mas tudo começa nos títulos. São eles que dizem quando existe um assunto principal ou um sub-assunto, dentro de um desses principais. Fazer isso em HTML5 é muito fácil e você está prestes a aprender isso. Vamos começar?</p>
+
+                <h3 class="subsecao-titulo">Entendendo a hierarquia de títulos (Exercício Prático)</h3>
+                <p class="texto-aula">Vamos começar com um exercício prático. Te convido a analisar uma matéria da revista VOCÊ S/A, de Fevereiro de 2015. Não precisa se focar em ler o conteúdo, apenas olhe para a imagem a seguir e tente identificar seus componentes visuais.</p>
+                <p class="texto-aula">Agora que você já deu uma olhada na estrutura, vamos procurar identificar a sua hierarquia de títulos. Com toda certeza, se eu te perguntar qual é o título principal da matéria, a resposta vem imediatamente: “Falta de sintonia”. Isso acontece porque esse é o texto que está em destaque principal no texto.</p>
+
+                <h4 class="ponto-topico">Outros títulos identificados na página:</h4>
+                <ul class="lista-topicos">
+                    <li class="item-topico">Pense antes de agir</li>
+                    <li class="item-topico">Passe mais tempo com seu desafeto</li>
+                    <li class="item-topico">Saiba com quem está lidando</li>
+                    <li class="item-topico">Tenha objetividade</li>
+                </ul>
+
+                <p class="texto-aula">Outra coisa que você também consegue identificar é um parágrafo destacado logo após o título principal, onde a fonte do texto é até maior e mais destacada, mas não chega a ser um título. Em seguida, existe um parágrafo introdutório, onde encontramos um texto que aponta a essência da matéria.</p>
+            </section>
+
+            <section id="subtitulos" class="secao-aula">
+                <h2 class="secao-titulo">A importância dos sub-títulos</h2>
+                <p class="texto-aula">Depois disso, começamos com os sub-títulos, que com certeza são partes que falam sobre o assunto “Falta de sintonia”, mas separa o tema principal em sub-temas para melhorar a organização dos “pensamentos" de quem escreveu a matéria. Isso facilita muito na organização dos textos.</p>
+                <p class="texto-aula">Dentro de cada um desses sub-títulos temos um parágrafo que desenvolve mais sobre cada assunto.</p>
+                <p class="texto-aula">Acho que deu pra entender meu ponto aqui, não é? Organizar o nosso conteúdo quando criamos páginas é essencial para ter um bom site.</p>
+            </section>
+
+            <section id="criando-titulos" class="secao-aula">
+                <h2 class="secao-titulo">Como criar títulos em HTML?</h2>
+                <p class="texto-aula">Títulos em HTML são conhecidos como headings (que, traduzindo do Inglês, significa título mesmo 😉). Os títulos possuem SEIS NÍVEIS de hierarquia, e esses níveis servem para organizar nosso conteúdo. Para isso, usamos as tags <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, <code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code> e <code>&lt;h6&gt;</code> para demarcar nossos títulos.</p>
+
+                <h3 class="subsecao-titulo">Cuidado: Tamanho não é documento!</h3>
+                <p class="texto-aula">Tem muita gente por aí que acha que <code>&lt;h1&gt;</code> significa “texto com fonte grande” e <code>&lt;h6&gt;</code> significa “texto com fonte pequena”. Isso não tem fundamento algum! Por favor, se alguém te disse isso algum dia, essa pessoa estava completamente equivocada.</p>
+                <p class="texto-aula">Um <code>&lt;h1&gt;</code> significa que esse é um assunto principal e é sobre ele que vamos escrever. Já o <code>&lt;h2&gt;</code> significa que esse é um sub-assunto do <code>&lt;h1&gt;</code> que está imediatamente acima dele. O <code>&lt;h3&gt;</code> significa que esse é um sub-assunto do <code>&lt;h2&gt;</code> que está acima dele. E assim sucessivamente até o <code>&lt;h6&gt;</code>.</p>
+
+                <h3 class="subsecao-titulo">Exemplo de Hierarquia (Páginas 1 a 3 do Capítulo)</h3>
+                <p class="texto-aula">Faça um outro exercício aí. Estamos agora na página 3 (é só olhar aqui embaixo). Vá para a página 1 desse capítulo e olhe o nosso <code>&lt;h1&gt;</code>: “Hierarquia de Títulos”. Nessa página 2, temos o sub-título <code>&lt;h2&gt;</code>: “Entendendo a hierarquia de títulos”. Ele é um sub-assunto do nosso <code>&lt;h1&gt;</code>.</p>
+                <p class="texto-aula">Nessa página 3 também temos outro <code>&lt;h2&gt;</code>: “Como criar títulos…” e logo abaixo temos um <code>&lt;h3&gt;</code>: “Mas cuidado…”. Note que esse é um sub-assunto de “como criar títulos…”.</p>
+                <p class="texto-aula">É claro que o nosso H3 tem letra menor que nosso H2, mas não se trata de tamanho. É questão de hierarquia!</p>
+            </section>
+
+            <section id="um-h1-por-pagina" class="secao-aula">
+                <h2 class="secao-titulo">Só um H1 em uma página: fato ou lenda?</h2>
+                <p class="texto-aula">Rola por aí muita gente falando que um documento HTML só deve ter um título <code>&lt;h1&gt;</code> e que todos os demais devem ser sub-títulos deles. Isso surgiu com a galera que falava sobre otimização de páginas para mecanismos de busca (SEO - Search Engine Optimization).</p>
+                <p class="texto-aula">Hoje em dia, o próprio Google (maior mecanismo de busca do mundo) já diz que isso é uma lenda. Para eles, o que mais importa é dar significado ao seu <code>&lt;h1&gt;</code>. Ele é um tema principal, e se a sua página tem vários temas principais, use vários <code>&lt;h1&gt;</code> sem medo.</p>
+            </section>
+
+            <section id="hierarquia-da-materia" class="secao-aula">
+                <h2 class="secao-titulo">Vamos criar a hierarquia da matéria da revista</h2>
+                <p class="texto-aula">A missão agora é transformar o conteúdo da matéria que te mostrei no início do capítulo em uma página HTML. Eu não vou me focar em digitar o texto dos parágrafos de cada seção e no lugar deles vou usar os famosos Lorem Ipsum genéricos. Vamos começar abrindo o Visual Studio Code e criando um documento <code>teste.html</code> em uma pasta qualquer. Dentro desse documento, crie o código base HTML usando a exclamação, como já ensinei algumas vezes durante esse material (consulte o Capítulo 4, página 6). Dentro da tag <code>&lt;body&gt;</code>, criaremos a estrutura do conteúdo.</p>
+                <p class="texto-aula">Você viu que a imagem acima começa na linha 8. As anteriores são o código HTML automático criado pelo VS Code.</p>
+                <p class="texto-aula">Na linha 9 temos nosso título principal. Nas linhas 12, 14, 16 e 18 temos os sub-títulos do principal, como analisamos anteriormente.</p>
+                <p class="texto-aula"><strong class="destaque">OBS:</strong> Na linha 10, tivemos uma novidade que foi a atribuição de uma classe ao parágrafo após o <code>&lt;h1&gt;</code>. Mais para frente falaremos mais sobre isso, mas basicamente é para conseguirmos criar uma configuração visual diferente para esse parágrafo especial usando folhas de estilo CSS.</p>
+            </section>
+
+            <section id="ouvindo-o-especialista" class="secao-aula">
+                <h2 class="secao-titulo">OUÇA O ESPECIALISTA</h2>
+                <p class="texto-aula">Aqui embaixo você vai encontrar um link para o vídeo do canal do Google para Webmasters onde o especialista John Mueller fala sobre esse assunto. O conteúdo está em inglês, mas você pode clicar no botão da engrenagem no canto inferior direito do vídeo e mandar traduzir automaticamente as legendas para o Português. Fica ótimo!</p>
+                <p class="texto-aula"><a href="https://youtu.be/WsgrSxCmMbM" target="_blank" rel="noopener noreferrer">Acesse: https://youtu.be/WsgrSxCmMbM</a></p>
+            </section>
+
+            <section id="criando-lorem" class="secao-aula">
+                <h2 class="secao-titulo">CRIANDO LOREM AUTOMATICAMENTE</h2>
+                <p class="texto-aula"><strong class="destaque">Até na hora de criar um Lorem Ipsum, o VS Code te ajuda.</strong> Dentro de um parágrafo recém criado, digite apenas a palavra <code>lorem</code> e pressione Enter. Pronto!</p>
+            </section>
+
+            <section id="hora-de-exercitar" class="secao-aula">
+                <h2 class="secao-titulo">Hora de exercitar</h2>
+                <p class="texto-aula">Agora chegou a hora de praticar. Acesse agora mesmo o endereço <a href="https://gustavoguanabara.github.io/html-css/exercicios/" target="_blank" rel="noopener noreferrer">https://gustavoguanabara.github.io/html-css/exercicios/</a> e execute o exercício 006 no seu computador e tente atingir esse mesmo resultado em casa, sem copiar o código que eu criei.</p>
+                <p class="texto-aula">Nesse momento, a prática é algo que você mais precisa. Se por acaso ficar difícil, pode acessar o repositório público de HTML e CSS e dar uma olhada nos comandos, mas <strong class="destaque">EVITE COPIAR</strong>.</p>
+            </section>
+
+            <section id="acompanhe-em-video" class="secao-aula">
+                <h2 class="secao-titulo">Quer acompanhar tudo em vídeo?</h2>
+                <p class="texto-aula">Eu sei que às vezes as pessoas gostam mais de assistir vídeos do que ler livros, e é por isso que eu lanço há anos materiais no canal Curso em Vídeo no YouTube. O link que vou compartilhar contigo faz parte da playlist completa onde você encontra o Módulo 1 do Curso de HTML5 e CSS3, completamente gravado com base nesse material.</p>
+                <p class="texto-aula">Além de acessar o link a seguir, você também pode ter acesso às aulas apontando a câmera do seu celular para o código QR ao lado. Todo dispositivo smartphone ou tablet atualizado já possui esse recurso de leitura de códigos habilitado por padrão.</p>
+                <p class="texto-aula"><a href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank" rel="noopener noreferrer">Módulo 1 do curso: https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n</a></p>
+                </section>
+
+            <section id="teste-seus-conhecimentos" class="secao-aula">
+                <h2 class="secao-titulo">Teste seus conhecimentos</h2>
+                <p class="texto-aula">Terminou de ler esse capítulo e já acompanhou todos os vídeos e referências externas que indicamos? Pois agora, responda a seguintes perguntas objetivas e marque em cada uma delas a única opção verdadeira. Aí sim, você vai poder comprovar que realmente entendeu o conteúdo.</p>
+
+                <ol class="lista-perguntas">
+                    <li class="item-pergunta">
+                        <p class="pergunta">1. Normalmente nossos textos são organizados em sessões, e cada uma pode possuir um título. Em HTML5 existe alguma limitação em relação a quantidade de títulos que um documento pode ter?</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q1" value="a"> sim. Só podemos ter no máximo seis títulos</li>
+                            <li class="opcao"><input type="radio" name="q1" value="b"> não. Um texto pode ter quantos títulos e quantos níveis for necessário</li>
+                            <li class="opcao"><input type="radio" name="q1" value="c"> não. Um texto pode ter vários títulos, mas apenas um máximo de seis níveis</li>
+                            <li class="opcao"><input type="radio" name="q1" value="d"> sim. Podemos ter até 12 títulos, dois para cada nível</li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <li class="item-pergunta">
+                        <p class="pergunta">2. Os títulos podem ser criados em seis níveis diferentes, usando as tags:</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q2" value="a"> &lt;head1&gt; até &lt;head6&gt;</li>
+                            <li class="opcao"><input type="radio" name="q2" value="b"> &lt;header1&gt; até &lt;header6&gt;</li>
+                            <li class="opcao"><input type="radio" name="q2" value="c"> &lt;title1&gt; até &lt;title6&gt;</li>
+                            <li class="opcao"><input type="radio" name="q2" value="d"> &lt;h1&gt; até &lt;h6&gt;</li>
+                        </ul>
+                    </li>
+                    <li class="item-pergunta">
+                        <p class="pergunta">3. Se estamos em um ponto do texto com título nível 3 e queremos aprofundar esse assunto com um sub-título, devemos usar qual nível? Lembre-se de seguir a recomendação da W3C.</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q3" value="a"> nível 4</li>
+                            <li class="opcao"><input type="radio" name="q3" value="b"> nível 2</li>
+                            <li class="opcao"><input type="radio" name="q3" value="c"> nível 3</li>
+                            <li class="opcao"><input type="radio" name="q3" value="d"> qualquer nível, de 3 até 6</li>
+                        </ul>
+                    </li>
+                    <li class="item-pergunta">
+                        <p class="pergunta">4. O título principal de um determinado documento ou página deverá sempre ser definido com um título de qual nível?</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q4" value="a"> nível 1</li>
+                            <li class="opcao"><input type="radio" name="q4" value="b"> nível 2</li>
+                            <li class="opcao"><input type="radio" name="q4" value="c"> nível 3</li>
+                            <li class="opcao"><input type="radio" name="q4" value="d"> tanto faz, o que importa é ser um título</li>
+                        </ul>
+                    </li>
+                    <li class="item-pergunta">
+                        <p class="pergunta">5. Muitos dizem que um documento só deve ter um

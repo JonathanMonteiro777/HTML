@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#CursoEMVideo - Hierarquia de Títulos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Html-ico.png" type="image/x-icon">
+</head>
+<body>
+    <main class="conteudo-principal">
+        <article class="aula">
+            <header class="aula-cabecalho">
+                <h1 class="aula-titulo">Capítulo 07: Hierarquia de Títulos</h1>
+                <p class="aula-info">Jonathan Monteiro</p>
+                <p>Este é um resumo da aula do capitulo 07 - Hierarquia de Títulos do professor Gustavo Guanabara. </p>
+            </header>
+
+            <section id="hierarquia-de-titulos" class="secao-aula">
+                <h2 class="secao-titulo"> Hierarquia de Títulos em HTML</h2>
+                <p class="texto-aula">Na organização do conteúdo web, os títulos desempenham um papel fundamental. Eles não apenas destacam informações, mas também estabelecem uma hierarquia lógica, indicando a relação entre assuntos principais e sub-assuntos.</p>
+            
+                <h3 class="subsecao-titulo">A Importância da Estrutura Semântica</h3>
+                <p class="texto-aula">Em HTML, utilizamos as tags <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code> para definir seis níveis de títulos. É fundamental entender que essas tags representam a importância do conteúdo, e não meramente o tamanho da fonte. Um <code>&lt;h1&gt;</code> sinaliza o título principal da página ou seção, enquanto os níveis subsequentes (<code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>, etc.) indicam sub-tópicos dentro do conteúdo.</p>
+            
+                <h3 class="subsecao-titulo">Hierarquia na Prática</h3>
+                <p class="texto-aula">Assim como em um artigo ou livro, a hierarquia de títulos facilita a leitura e a compreensão. Um leitor pode rapidamente identificar os temas principais e navegar pelos sub-temas de interesse. Uma estrutura bem definida também é essencial para a acessibilidade, permitindo que leitores de tela interpretem corretamente a organização do conteúdo.</p>
+            
+                <h3 class="subsecao-titulo">Desvendando Mitos</h3>
+                <p class="texto-aula">Contrariando uma crença popular, o Google e as práticas modernas de SEO indicam que não há problema em utilizar múltiplos elementos <code>&lt;h1&gt;</code> em uma página, desde que cada um represente um tema principal distinto dentro de seu contexto.</p>
+            
+                <h3 class="subsecao-titulo">Aplicando a Hierarquia</h3>
+                <p class="texto-aula">Ao estruturar o HTML, é preciso pensar na lógica do conteúdo. Se uma seção introduz um tema principal, devemos usar o <code>&lt;h2&gt;</code> (assumindo que o título da página seja o <code>&lt;h1&gt;</code>). Se dentro dessa seção for abordado sub-tópicos, utilizamos o <code>&lt;h3&gt;</code>, e assim por diante. Essa organização semântica não só melhora a experiência do usuário, mas também auxilia os mecanismos de busca a entenderem a relevância do conteúdo.</p>
+            
+            </section>
+
+            <section id="hora-de-exercitar" class="secao-aula">
+                <h2 class="secao-titulo">Hora de Exercitar!</h2>
+                <p>Este exercício prático é fundamental para aplicar os conceitos discutidos e internalizar a importância de uma estrutura de títulos bem definida. Este exercício foi proposto pelo Professor Guanabara no endereço </p>
+                <p>Para acessar o PDF com os exercícios clique no link: <a href="https://gustavoguanabara.github.io/html-css/exercicios/" target="_blank" rel="noopener noreferrer">https://gustavoguanabara.github.io/html-css/exercicios/</a></p>
+
+                <ol class="lista-perguntas">
+                    <li class="item-pergunta">
+                        <p class="pergunta">1. Normalmente nossos textos são organizados em sessões, e cada uma pode possuir um título. Em HTML5 existe alguma limitação em relação a quantidade de títulos que um documento pode ter?</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q1" value="a"> sim. Só podemos ter no máximo seis títulos</li>
+                            <li class="opcao"><input type="radio" name="q1" value="b"> não. Um texto pode ter quantos títulos e quantos níveis for necessário</li>
+                            <li class="opcao"><input type="radio" name="q1" value="c"> não. Um texto pode ter vários títulos, mas apenas um máximo de seis níveis</li>
+                            <li class="opcao"><input type="radio" name="q1" value="d"> sim. Podemos ter até 12 títulos, dois para cada nível</li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <li class="item-pergunta">
+                        <p class="pergunta">2. Os títulos podem ser criados em seis níveis diferentes, usando as tags:</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q2" value="a"> &lt;head1&gt; até &lt;head6&gt;</li>
+                            <li class="opcao"><input type="radio" name="q2" value="b"> &lt;header1&gt; até &lt;header6&gt;</li>
+                            <li class="opcao"><input type="radio" name="q2" value="c"> &lt;title1&gt; até &lt;title6&gt;</li>
+                            <li class="opcao"><input type="radio" name="q2" value="d"> &lt;h1&gt; até &lt;h6&gt;</li>
+                        </ul>
+                    </li>
+                    <li class="item-pergunta">
+                        <p class="pergunta">3. Se estamos em um ponto do texto com título nível 3 e queremos aprofundar esse assunto com um sub-título, devemos usar qual nível? Lembre-se de seguir a recomendação da W3C.</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q3" value="a"> nível 4</li>
+                            <li class="opcao"><input type="radio" name="q3" value="b"> nível 2</li>
+                            <li class="opcao"><input type="radio" name="q3" value="c"> nível 3</li>
+                            <li class="opcao"><input type="radio" name="q3" value="d"> qualquer nível, de 3 até 6</li>
+                        </ul>
+                    </li>
+                    <li class="item-pergunta">
+                        <p class="pergunta">4. O título principal de um determinado documento ou página deverá sempre ser definido com um título de qual nível?</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q4" value="a"> nível 1</li>
+                            <li class="opcao"><input type="radio" name="q4" value="b"> nível 2</li>
+                            <li class="opcao"><input type="radio" name="q4" value="c"> nível 3</li>
+                            <li class="opcao"><input type="radio" name="q4" value="d"> tanto faz, o que importa é ser um título</li>
+                        </ul>
+                    </li>
+                    <li class="item-pergunta">
+                        <p class="pergunta">5. Muitos dizem que um documento só deve ter um título nível 1. Isso é verdade?</p>
+                        <ul class="lista-opcoes">
+                            <li class="opcao"><input type="radio" name="q5" value="a"> sim. Um documento só pode ter um título nível 1</li>
+                            <li class="opcao"><input type="radio" name="q5" value="b"> não. Um documento pode ter quantos títulos nível 1 forem necessários</li>
+                            <li class="opcao"><input type="radio" name="q5" value="c"> não. Um documento pode ter vários títulos nível 1, mas apenas um máximo de seis níveis</li>
+                            <li class="opcao"><input type="radio" name="q5" value="d"> sim. Podemos ter até 12 títulos, dois para cada nível</li>
+                        </ul>
+                    </li>
+                </ol>
+            </section>
+        </article>
+    </main>
+    <footer class="rodape">
+        <p class="texto-rodape">Curso em Vídeo - Aula prática &copy; 2023</p>
+        <p>Jonathan Monteiro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>

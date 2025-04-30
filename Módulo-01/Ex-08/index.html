@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Html-ico.png" type="image/x-icon">
+    <title>Formatação de Textos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Html-ico.png" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title-header">Principais Formatações</h1>
+    </header>
+    <main>
+        <article class="section-principal">
+            <section>
+                <h2 class="title-principal">Negrito / Destaque (Tags de Forma vs Tags de Sentido)</h2>
+                <p class="text">As tags semânticas possuem significado e indicam o propósito do conteúdo, enquanto as
+                    tags de forma apenas definem a aparência visual sem transmitir significado.</p>
+
+                <h3 class="sub-title">Tags Semânticas</h3>
+                <p class="text">
+                    As tags semânticas no HTML são aquelas que possuem um significado claro e descrevem o propósito do
+                    conteúdo que envolvem. Elas ajudam tanto os desenvolvedores quanto os navegadores e ferramentas de
+                    acessibilidade a entenderem melhor a estrutura e o significado do conteúdo de uma página.
+                </p>
+                <p class="text">Nesta frase tenho um <strong>termo em destaque</strong> usando a tag
+                    <code>&lt;strong&gt;</code> (semântica). A tag <code>&lt;strong&gt;</code> é usada para indicar que
+                    o texto tem um significado especial ou importância maior em relação ao restante do conteúdo.
+                </p>
+
+                <h3 class="sub-title">Tags de Forma</h3>
+                <p class="text">As tags de forma são tags que não possuem significado semântico, ou seja, não informam o
+                    que o texto representa. Elas são usadas apenas para estilizar o conteúdo, como negrito ou itálico,
+                    mas não transmitem informações sobre o conteúdo em si.</p>
+
+                <p class="text">Nesta frase temos um <b>termo em negrito</b> usando a tag <code>&lt;b&gt;</code> (de
+                    forma ou não semântica). A tag <code>&lt;b&gt;</code> é usada para aplicar negrito ao texto, mas sem
+                    adicionar significado semântico ao conteúdo.</p>
+            </section>
+
+            <section>
+                <h2 class="title-principal">Itálico / Ênfase</h2>
+                <p class="text">As tags semânticas no HTML são aquelas que possuem um significado claro e descrevem o
+                    propósito do conteúdo que envolvem. Elas ajudam tanto os desenvolvedores quanto os navegadores e
+                    ferramentas de acessibilidade a entenderem melhor a estrutura e o significado do conteúdo de uma
+                    página.</p>
+
+                <h3 class="sub-title">As tags &lt;i&gt; e &lt;em&gt;</h3>
+                <p class="text">Nesta frase, temos um <i>termo em itálico</i> usando a tag <code>&lt;i&gt;</code> (de
+                    forma ou não semântica). A tag <code>&lt;i&gt;</code> é usada para aplicar itálico ao texto, mas sem
+                    adicionar significado semântico ao conteúdo.</p>
+
+                <p class="text">Nesta frase temos um <em>termo em ênfase</em> usando a tag <code>&lt;em&gt;</code>
+                    (semântica). A tag <code>&lt;em&gt;</code> é usada para indicar que o texto tem um significado
+                    especial ou importância maior em relação ao restante do conteúdo.</p>
+            </section>
+
+            <section>
+                <h2 class="title-principal">Texto Marcado</h2>
+                <p class="text">Podemos criar também <mark style="background-color: lime;">um texto marcado com
+                        style</mark> usando a tag <code>&lt;mark&gt;</code>. A tag <code>&lt;mark&gt;</code> é usada
+                    para destacar partes do texto que são relevantes ou importantes em um contexto específico.</p>
+            </section>
+
+            <section>
+                <h2 class="title-principal">Texto Grande e Pequeno</h2>
+                <p class="text">Aqui temos um <big>texto em tamanho grande</big> utilizando a tag
+                    <code>&lt;big&gt;</code> e um <small>texto em tamanho pequeno</small> utilizando a tag
+                    <code>&lt;small&gt;</code> neste parágrafo.
+                </p>
+
+                <h3 class="sub-title">Texto Pequeno</h3>
+                <p class="text">A tag <code>&lt;small&gt;</code> é usada para indicar texto que deve ser exibido em um
+                    tamanho menor em relação ao texto ao redor.</p>
+
+                <h3 class="sub-title">Texto Deletado</h3>
+                <p class="text">Podemos marcar um <del>texto como excluído</del> para indicar que ele foi removido ou
+                    que não deve ser considerado como parte do conteúdo principal.</p>
+            </section>
+
+            <section>
+                <h2 class="title-principal">Texto Inserido</h2>
+                <p class="text">A tag <code>&lt;ins&gt;</code><ins> é usada para indicar um texto inserido</ins>,
+                    destacando que ele foi adicionado ao conteúdo original.</p>
+
+                <p class="text">Existe também o <u>sublinhado</u> com a tag <code>&lt;u&gt;</code> (não semântica). A
+                    tag <code>&lt;u&gt;</code> é usada para aplicar um sublinhado ao texto, mas não transmite
+                    significado semântico.</p>
+
+                <h3 class="sub-title">Texto Sobrescrito</h3>
+                <p class="text">A tag <code>&lt;sup&gt;</code> é usada para criar texto sobrescrito, como em expressões
+                    matemáticas ou científicas, onde é necessário exibir expoentes ou outras notações elevadas. Por
+                    exemplo, podemos representar uma equação como x<sup>20</sup> + 3.</p>
+
+                <h3 class="sub-title">Texto Subscrito</h3>
+                <p class="text">Para representar elementos como H<sub>2</sub>O, usamos a tag <code>&lt;sub&gt;</code>,
+                    que é utilizada para criar texto subscrito.</p>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Jonathan Monteiro</p>
+        <p>Curso de HTML5 e CSS3</p>
+        <p>Curso em Vídeo</p>
+    </footer>
+</body>
+
+</html>

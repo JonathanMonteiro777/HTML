@@ -1,0 +1,56 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: #007BFF; /* Azul moderno */
+    --secondary-color: #333; /* Cinza escuro */
+    --background-color: #f4f4f4; /* Cinza claro */
+    --text-color: #555; /* Texto principal */
+    --accent-color: #ffffff; /* Branco */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+/* Conteúdo principal */
+main {
+    padding: 2rem;
+}
+
+/* Botões */
+button {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}

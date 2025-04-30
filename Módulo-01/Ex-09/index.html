@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/Html-ico.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Trabalhando com Listas</h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Listas Ordenadas</h2>
+                <p>Para criar uma <em>ordered list</em> (lista ordenada), é só utilizar a tag &lt;ol&gt; para delimitar
+                    a
+                    lista e
+                    &lt;li&gt; (list item) para identificar cada item da lista.</p>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ol>
+                <p><strong>IMPORTANTE:</strong> segundo a <b>W3C</b>, a tag &lt;ol&gt; é de fechamento obrigatório
+                    (&lt;/ol&gt;), já
+                    a tag &lt;li&gt; tem seu fechamento <b>opcional a partir do HTML5.</b></p>
+                <p>A tag &lt;ol&gt; possui um parâmetro <i>type</i>, onde configuramos o tipo de marcador da lista
+                    atual.
+                    Exemplo:</p>
+                <ol type="A">
+                    <li>Item A</li>
+                    <li>Item B</li>
+                    <li>Item C</li>
+                </ol>
+                <ol type="I">
+                    <li>Item I</li>
+                    <li>Item II</li>
+                    <li>Item III</li>
+                </ol>
+            </section>
+            <section>
+                <h2>Listas Não Ordenadas</h2>
+                <p>Para criar uma <i>unordered list</i> (lista não ordenada), vamos usar a tag &lt;ul&gt; para delimitar
+                    a lista e a
+                    tag &lt;li&gt; para criar cada um dos seus itens internos.</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+                <p>O marcador padrão é a bolinha preta totalmente preenchida (<i>disc</i>), mas existe a opção de
+                    configurar a propriedade <i>type</i> da tag &lt;ul&gt; com os valores: <i>disc</i> (círculo
+                    totalmente pintado),
+                    <i>circle</i> (borda preta, sem preenchimento) e <i>square</i> (quadrado preto totalmente pintado).
+                </p>
+
+            </section>
+            <section>
+                <h2>Misturando as Coisas</h2>
+                <p>É possível criar listas mistas, configurando listas dentro de outras listas.</p>
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <ol type="a">
+                        <li>Item 2.1</li>
+                        <li>Item 2.2</li>
+                        <li>Item 2.3</li>
+                    </ol>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ol>
+
+                <h2>Lista dos Melhores Jogos</h2>
+                <ul>
+                    <li>Nintendinho</li>
+                    <ul>
+                        <li>Mario Bros</li>
+                        <ul type="square">
+                            <li>Super Mario Bros 3</li>
+                            <li>Mario: Lost Levels</li>
+                        </ul>
+                        <li>Ninja Gaiden</li>
+                        <ul type="square">
+                            <li>Ninja Gaiden III</li>
+                        </ul>
+                    </ul>
+                    <li>Super Nintendo</li>
+                    <ul>
+                        <li>Super Mario World</li>
+                        <li>Donkey Kong</li>
+                        <ul type="square">
+                            <li>Donkey Kong Country III</li>
+                            <li>Diddy's Kong Quest</li>
+                        </ul>
+                    </ul>
+                    <li>PlayStation 1</li>
+                    <ul>
+                        <li>Final Fantasy</li>
+                        <ul type="circle">
+                            <li>Final Fantasy VII</li>
+                            <li>Final Fantasy IX</li>
+                        </ul>
+                        <li>Castlevania</li>
+                        <ul type="circle">
+                            <li>Symphony of the Night</li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+            <section>
+                <h2>Lista de Definições</h2>
+
+                <p>Lista de definições é como se fosse um dicionário: temos os termos e as suas descrições. É uma lista
+                    sem
+                    marcadores, mas bem útil em alguns casos. Toda lista de definições está dentro da tag &lt;dl&gt;
+                    (<i>definition list</i>). Cada termo é um &lt;dt&gt; (<i>definition term</i>) e cada descrição é um
+                    &lt;dd&gt; (<i>definition description</i>). Assim como os itens da lista, essas duas últimas tags
+                    possuem fechamento opcional, segundo a referência oficial do HTML5.</p>
+
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>É uma linguagem de marcação utilizada para criar o conteúdo de sites.</dd>
+                    <dt>CSS</dt>
+                    <dd>É uma linguagem de marcação para a especificação de estilos em sites.</dd>
+                    <dt>JavaScript</dt>
+                    <dd>É uma linguagem de programação para criar interatividades em sites.</dd>
+                </dl>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Jonathan Monteiro</p>
+        <p>Aula de HTML5 e CSS3</p>
+        <p>Curso em Video</p>
+    </footer>
+</body>
+
+</html>

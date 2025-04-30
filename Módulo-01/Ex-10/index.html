@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/Html-ico.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Links e âncoras em HTML</title>
+</head>
+
+<body>
+  <header>
+    <h1>Os hyperlinks</h1>
+  </header>
+  <nav>
+    <h2>Usando links internos</h2>
+    <p>Para acessar a segunda página do site clique <a href="pag-2.html"
+        rel="next">Página 2</a>.</p>
+    <p>Para acessar a terceira página: <a href="Noticias/pag-3.html" rel="next">Página 3</a>.</p>
+  </nav>
+
+  <main>
+    <article>
+      <section>
+        <h2>O que é um Hyperlink?</h2>
+        <p>O <b>link</b> ou ligação é a essência fundamental do hipertexto. Ela nos permite ligar documentos entre si e
+          permitir a navegação entre essas páginas. Nesse capítulo vamos aprender a configurar as âncoras para vários
+          comportamentos, desde o mais simples que é criar um link interno até ligações que habilitam downloads de
+          arquivos.</p>
+        <p>Para criar um hyperlink, devemos criar <b>âncoras</b> através da tag &lt;a&gt;. O principal atributo dessa tag
+          é o href, que cria uma referência hipertexto.</p>
+      </section>
+
+      <section>
+        <h2>Usando links externos</h2>
+        <p>Este curso é oferecido pelo <a href="https://youtube.com/cursoemvideo" target="_blank" rel="external">CURSO EM
+            VIDEO</a>, e tem o material completo em PDF no <a href="https://gustavoguanabara.github.io" target="_blank"
+            rel="external">GitHub</a>.</p>
+        <hr>
+        <h3>Atributos</h3>
+        <p>O atributo <i>target</i> é utilizado para poder controlar onde o site de destino vai abrir.</p>
+        <dl>
+          <dt><b>href</b></dt>
+          <dd>Atributo que cria uma referência hipertexto.</dd>
+          <ul>
+            <li>target</li>
+            <li>rel</li>
+          </ul>
+          <dt><b>target</b></dt>
+          <dd>Atributo que controla onde o site de destino vai abrir.</dd>
+          <ul>
+            <li>_blank</li>
+            <li>_self</li>
+            <li>_top</li>
+            <li>_parent</li>
+          </ul>
+        </dl>
+      </section>
+    </article>
+
+  
+
+    <article>
+      <section>
+        <h2>Links para Downloads</h2>
+        <p>Para fazer o link diretamente para o arquivo que se deseja efetuar o download, adicione o atributo download com
+          o valor configurado para o nome do arquivo a ser baixado e o atributo <i>type</i> para indicar ao navegador que
+          tipo de arquivo está sendo baixado.</p>
+        <ul>
+          <li><a href="livro/meulivropdf.pdf" download="meulivropdf" type="application/pdf">Baixar o livro em PDF</a></li>
+          <li><a href="livro/meulivrozip.zip" download="meulivrozip" type="application/zip">Livro compactado em zip</a>
+          </li>
+        </ul>
+        <p>Existem alguns media types bem usados no dia a dia:</p>
+        <ul>
+          <li>application/zip</li>
+          <li>text/html</li>
+          <li>text/css</li>
+          <li>text/javascript</li>
+          <li>video/mp4</li>
+          <li>video/H264</li>
+          <li>video/JPEG</li>
+          <li>audio/aac</li>
+          <li>audio/mpeg</li>
+          <li>font/ttf</li>
+          <li>image/jpeg</li>
+          <li>image/png</li>
+        </ul>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>Desenvolvido por Jonathan Monteiro</p>
+    <p>Aula de HTML5 e CSS3</p>
+    <p>&copy;Curso em Vídeo</p>
+  </footer>
+</body>
+
+</html>

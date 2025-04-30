@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Outras Formatações</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <header>
+      <h1>Outras Formatações / Pré-formatado</h1>
+   </header>
+
+   <main>
+      <article>
+         <section>
+            <h2>Trechos de código</h2>
+            <p>
+               A tag <code>&lt;code&gt;</code> existe para indicar ao navegador que se trata de um código de computador.
+               Porém, existe também um efeito visual, pois as letras ficam no modo <em>mono-espaçadas</em> (monospace),
+               o que facilita bastante a leitura do código. Usando outra tag HTML chamada <code>&lt;pre&gt;</code>,
+               que mantém o texto pré-formatado exatamente da mesma maneira na qual ele foi digitado, incluindo quebras
+               de
+               linha e tabulações.
+            </p>
+            <pre>
+<code>
+num = int(input("Digite um número: "))
+if num % 2 == 0:
+   print(f'O número {num} é par')
+else:
+   print(f'O número {num} é ímpar')
+print('Fim do programa')
+</code>
+            </pre>
+            <p>
+               Este exemplo de código acima está na linguagem Python. Para construir esta formatação, foram utilizadas
+               as tags
+               <code>&lt;code&gt;</code> e <code>&lt;pre&gt;</code>.
+            </p>
+         </section>
+
+         <section>
+            <h2>Citações simples</h2>
+            <p>
+               Uma frase conhecida no mundo dos programadores é:
+               <q>O computador é um burro muito rápido.</q>
+            </p>
+            <p>
+               O texto acima está entre aspas, mas não tem nenhum deslocamento, pois está dentro da tag
+               <code>&lt;q&gt;</code>.
+               Esta tag é utilizada quando se faz uma citação no meio de um parágrafo.
+            </p>
+         </section>
+
+         <section>
+            <h2>Citações completas</h2>
+            <p>
+               Também é possível criar citações mais longas (em bloco) e que tenham um parágrafo só para si, usando a
+               tag
+               <code>&lt;blockquote&gt;</code>. Assim, o texto ganha um recuo automaticamente. Existe também uma tag
+               para
+               colocar
+               um link com o texto original usando o atributo <code>cite</code> dentro da tag.
+            </p>
+            <blockquote cite="https://www.martinsfontespaulista.com.br/php-a-biblia-53304.aspx/p">
+               O PHP é uma linguagem para criação de scripts para a web do lado servidor embutidos em HTML, cujo
+               código-fonte
+               é aberto,
+               e que é compatível com os mais importantes servidores web (especialmente Apache).
+            </blockquote>
+         </section>
+
+         <section>
+            <h2>Abreviações</h2>
+            <p>
+               Usando a tag <code>&lt;abbr&gt;</code>, é possível deixar claro ao usuário (e aos mecanismos de busca) o
+               significado de uma sigla.
+            </p>
+            <p>
+               Exemplo: Eu estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e
+               <abbr title="Cascading Style Sheets">CSS</abbr> para criar sites.
+            </p>
+         </section>
+
+         <section>
+            <h2>Texto Invertido</h2>
+            <p>
+               <bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo>
+            </p>
+            <p>
+               O texto acima é o resultado da tag <code>&lt;bdo&gt;</code>. BDO significa <em>bi-directional
+                  override</em>.
+               Junto com a tag, existe o atributo <code>dir</code> para indicar uma das duas direções possíveis.
+            </p>
+         </section>
+      </article>
+   </main>
+
+   <footer>
+      <p>Desenvolvido por Jonathan Monteiro</p>
+      <p>Curso de HTML5 e CSS3</p>
+      <p>Curso em Vídeo</p>
+   </footer>
+</body>
+
+</html>

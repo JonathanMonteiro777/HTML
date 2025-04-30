@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img-guimp/Html-ico.png" type="image/x-icon">
+    <title>Midias em HTML-5</title>
+</head>
+
+<body>
+    <H1>Imagens flexíveis</H1>
+    <p>O primeiro passo no de adaptar o conteúdo ao tamanho da tela vai ser aprender a gerar imagens de tamanho
+        diferentes e fazer o navegador carregar a imagem certa para cada situação. Para isso, é nescessário conhecer as
+        tags &lt;picture&gt; e &lt;source&gt;.</p>
+    <p>para esse exemplo, criamos três imagens: a menor tem 300x300px, a média tem 700x700px e a maior tem 1000x1000px.
+    </p>
+    <pre>
+        <code>
+            &lt;picture&gt;
+                &lt;source media="(max-width: 750px)" srcset="img-guimp/img-p.png" type="image/png"&gt;
+                &lt;source media="(max-width: 1000px)" srcset="img-guimp/img-M.png" type="image/png"&gt;
+                &lt;img src="img-guimp/img-G.png" alt="imagem flexivel"&gt;
+            &lt;/picture&gt;
+        </code>
+        </pre>
+    <p>É importante que existe uma ordem entre os &lt;souce&gt;, e nessa nossa configuração, os itens mais acima sejam
+        os menores tamanhos pra <i>max-width</i> e que os seguintes sejam maiores, de forma crescente. O último item
+        dentro de &lt;picture&gt; deve ser a imagem padrão.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="img-guimp/img-p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="img-guimp/img-M.png" type="image/png">
+        <img src="img-guimp/img-G.png" alt="imagem flexivel">
+    </picture>
+
+
+    <h1>Reproduzindo Áudio</h1>
+
+    <p>Vamos aprender a reproduzir áudios em HTML5 </p>
+    <audio preload="metadata" controls>
+        <source src="midia/hip-hop.mp3" type="audio/mpeg">
+        <source src="midia/hip-hop.mp3" type="audio/ogg">
+        <source src="midia/hip-hop.mp3" type="audio/wav">
+        <p>Infelismente seu navegador não consegue reproduzir audio. <a href="midia/hip-hop.mp3">clique aqui para baixar
+                o arquivo mp3.</a></p>
+    </audio>
+
+
+    <h2>Reproduzindo Videos hopetados localmente</h2>
+    <p>Este video está hospedado no meu proprio servidor.</p>
+
+    <video media="max-width: 750"  autoplay controls>
+        <source src="midia/MeuvideoMP4.mp4" type="video/mp4">
+        <source src="midia/MeuvideoWEBM.webm" type="video/webm">
+        <source src="midia/MeuvideoMKV.mkv" type="video/mkv">
+        <source src="midia/MeuvideoOGV.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com a reprodução deste video. <a href="midia/MeuvideoMP4.mp4"> Clique aqui para baixar</a></p>
+    </video>
+
+    <h2> Inserindo videos do youtube.</h2>
+    <p>Usar os serviços de hospedagem de vídeos como o YouTube ou o Vimeo vai evitar consumir nossos recursos de host contratado.</p>
+    
+    <iframe width="750" height="560" src="https://www.youtube.com/embed/OzUnqQk4eOg?si=haymjHFP5jVpbyTm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+
+</html>

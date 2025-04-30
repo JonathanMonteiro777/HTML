@@ -1,0 +1,95 @@
+/* Estilos para o cabeçalho da página */
+.cabecalho-pagina {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cabecalho-titulo {
+    font-size: 2em;
+    color: #333;
+  }
+  
+  /* Estilos para o conteúdo principal */
+  .conteudo-principal {
+    padding: 20px;
+  }
+  
+  /* Estilos para cada seção de conteúdo */
+  .secao-conteudo {
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #eee;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .secao-titulo {
+    font-size: 1.5em;
+    color: #555;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+  
+  .texto-principal {
+    line-height: 1.7;
+    color: #444;
+  }
+  
+  /* Estilos específicos para a lista de símbolos */
+  .lista-simbolos {
+    margin-top: 10px;
+  }
+  
+  .subtitulo-secao {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para a lista de simbolos */
+  .lista-itens.lista-simbolos {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .item-lista {
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos específicos para a lista de emojis */
+  .lista-emojis {
+    display: flex;
+    gap: 10px;
+    font-size: 2em;
+    list-style: none;
+  }
+  
+  .emoji-item {
+    /* Você pode adicionar estilos específicos para cada emoji item aqui, se necessário */
+
+  }
+  
+  /* Estilos para o rodapé da página */
+  .rodape-pagina {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9em;
+  }
+  
+  .rodape-texto {
+    margin: 0;
+  }
+  
+  /* Estilos para o container (se você já tiver algum) */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }

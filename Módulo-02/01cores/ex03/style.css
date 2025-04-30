@@ -1,0 +1,40 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* Color Theme Swatches in Hex 
+{ color: #027373; }
+{ color: #038C7F; }
+{ color: #A9D9D0; }
+{ color: #F2E7DC; }
+{ color: #0D0D0D; }
+*/
+body {
+    background-image: linear-gradient(to right, #487070, #8ab7b3);
+}
+
+main {
+    background-color: #f2e7dc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #3347479e;
+    width: 800px;
+    padding: 10px;
+    margin: auto;
+}
+
+h1 {
+    color: #07786c;
+    text-align: center;
+    text-shadow: 1px 1px 2px #20343459;
+    font-weight: bold;
+}
+
+h2 {
+    color: #487070;
+}
+
+p {
+    text-align: justify;
+}
+

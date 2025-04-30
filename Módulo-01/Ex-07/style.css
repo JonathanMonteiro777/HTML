@@ -1,0 +1,61 @@
+/* estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+a.link-exercicio {
+    color: #007BFF;
+    text-decoration: none;
+}
+a.link-exercicio:hover {
+    text-decoration: underline;
+}
+/* cabeçalho */
+.cabecalho {
+    background-color: #f8f8f8;
+    color: black;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+/* conteúdo principal */
+.conteudo-principal {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* título da seção */
+.secao-titulo {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+/* título da subseção */
+.subsecao-titulo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+/* Rodapé */
+.rodape {
+    font-size: 1.1em;
+    color: #000;
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+}

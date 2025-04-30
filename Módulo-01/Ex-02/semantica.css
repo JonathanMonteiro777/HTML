@@ -1,0 +1,137 @@
+/* Estilos Globais */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    margin-bottom: 5px;
+    color: #28a745; /* Cor primária */
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  header nav li {
+    margin: 0 15px;
+  }
+  
+  /* Conteúdo Principal */
+  main {
+    display: flex;
+    gap: 30px;
+  }
+  
+  #artigos-recentes {
+    flex: 3; /* Ocupa 3 partes do espaço disponível */
+  }
+  
+  article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  article header h3 a {
+    color: #333;
+  }
+  
+  article header p {
+    color: #777;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+  }
+  
+  article a.leia-mais {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  article a.leia-mais:hover {
+    background-color: #0056b3;
+    text-decoration: none;
+  }
+  
+  /* Barra Lateral */
+  aside {
+    flex: 1; /* Ocupa 1 parte do espaço disponível */
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+  }
+  
+  aside h3 {
+    margin-top: 0;
+    color: #555;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  aside ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Rodapé */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  footer nav ul {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  footer nav li {
+    margin: 0 10px;
+    display: inline;
+  }
+  
+  footer nav a {
+    color: #fff;
+  }
+  
+  footer nav a:hover {
+    text-decoration: underline;
+  }

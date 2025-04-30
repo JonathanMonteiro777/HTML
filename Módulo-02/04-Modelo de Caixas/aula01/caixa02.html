@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightslategrey;
+        }
+
+        header {
+            background-color: white;
+            padding: 20px;
+            margin: 1opx;
+        }
+
+        nav {
+            background-color: lightskyblue;
+            padding: 15px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.479);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: rgb(137, 121, 121);
+            font-weight: bold;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        article>aside {
+            background-color: lightblue;
+        }
+
+        footer {
+            background-color: rgb(48, 52, 56);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+        footer > p {
+            margin: 0;
+        }
+        div#bola {
+            height:  100px;
+            width: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="http://#">Links</a>
+            <a href="http://#">Links</a>
+            <a href="http://#">Links</a>
+            <a href="http://#">Links</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+            <p>Esportes, politica e tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta autem qui harum assumenda iste?
+                    Repellat voluptatem in, atque voluptate quae, eum voluptates qui quisquam, recusandae cupiditate
+                    error id mollitia officiis?</p>
+                <aside>
+                    <p>artigo do jose da silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Jonathan Monteiro</p>
+        <div id="bola">
+
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+/* Variáveis de cores */
+:root {
+    --primary-color: #007BFF; /* Azul moderno */
+    --secondary-color: #333; /* Cinza escuro */
+    --background-color: #f4f4f4; /* Cinza claro */
+    --text-color: #555; /* Texto principal */
+    --accent-color: #ffffff; /* Branco */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Reset básico */
+body {
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    text-align: center;
+    font-size: 2em;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    max-width: 1200px;
+}
+
+/* Seção principal */
+.section-principal {
+    background-color: var(--accent-color);
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow-color);
+    max-width: 1200px;
+    text-align: justify;
+}
+
+/* Seções */
+section {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Título principal */
+.title-principal {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Subtítulo */
+.sub-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    color: var(--secondary-color);
+}
+
+/* Texto */
+.text {
+    font-size: 1em;
+    line-height: 1.8;
+    color: var(--text-color);
+    margin: 10px 0;
+    text-align: justify;
+}
+
+/* Rodapé */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--accent-color);
+    font-size: 0.9em;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

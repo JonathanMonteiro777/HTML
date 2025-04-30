@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Poder das Cores</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2, h3 {
+            color: #007bff;
+        }
+
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        h3 {
+            margin-top: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .important {
+            font-weight: bold;
+            color: #dc3545;
+        }
+
+        .code {
+            background-color: #e9ecef;
+            padding: 5px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+
+        .link {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Resumo: O Poder das Cores</h1>
+    <p>Dev-Web - Prof. Gustavo Guanabara</p>
+    <a href="circulo.html">Circulo Cromático</a>
+
+    <section>
+        <h2>A Emoção das Cores</h2>
+        <ul>
+            <li>As cores influenciam as emoções e decisões dos usuários em websites.</li>
+            <li>Afeta o tempo de permanência e decisões de compra.</li>
+            <li><span class="important">Neil Patel:</span> 90% da decisão sobre um produto é baseada na cor nos primeiros 90 segundos.</li>
+            <li>Diferentes cores evocam diferentes emoções (ex: azul - confiança, vermelho - energia).</li>
+            <li>Considerar associações culturais e de mercado ao escolher cores.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>O Círculo Cromático</h2>
+        <ul>
+            <li>Base para entender a harmonia das cores.</li>
+            <li><strong>Cores Primárias:</strong> Amarelo, Vermelho e Azul.</li>
+            <li><strong>Cores Secundárias:</strong> Laranja (amarelo + vermelho), Violeta/Roxo (azul + vermelho), Verde (azul + amarelo).</li>
+            <li><strong>Cores Terciárias:</strong> Mistura de uma primária com uma secundária (ex: amarelo-esverdeado).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Temperatura e Harmonia das Cores</h2>
+        <h3>Temperatura das Cores</h3>
+        <ul>
+            <li><strong>Cores Quentes:</strong> Vermelho, laranja e amarelo (calor, proximidade).</li>
+            <li><strong>Cores Frias:</strong> Azul, verde e roxo (calma, frescor).</li>
+        </ul>
+
+        <h3>Esquemas Harmônicos</h3>
+        <ul>
+            <li><strong>Cores Complementares:</strong> Opostas no círculo (alto contraste).</li>
+            <li><strong>Cores Análogas:</strong> Viznhas no círculo (baixo contraste, harmonia).</li>
+            <li><strong>Cores Análogas + 1 Complementar:</strong> Combinação dos anteriores.</li>
+            <li><strong>Cores Análogas Relacionadas:</strong> Duas análogas, pula uma, escolhe a seguinte.</li>
+            <li><strong>Cores Intercaladas:</strong> Cores com intervalos constantes.</li>
+            <li><strong>Cores Triádicas:</strong> Três cores equidistantes (alto contraste).</li>
+            <li><strong>Cores em Quadrado:</strong> Quatro cores com contraste razoável.</li>
+            <li><strong>Cores Tetrádicas:</strong> Dois pares de cores complementares.</li>
+            <li><strong>Monocromia:</strong> Variações de saturação e brilho de uma cor (degradê).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Aplicação Prática em CSS</h2>
+        <ul>
+            <li>Ferramentas online (ex: <a href="https://color.adobe.com/pt/" class="link" target="_blank">Adobe Color</a>) auxiliam na escolha de paletas.</li>
+            <li>Cores em CSS podem ser definidas por:
+                <ul>
+                    <li>Nomes textuais (limitado).</li>
+                    <li>Códigos hexadecimais (<span class="code">#RRGGBB</span>).</li>
+                    <li>Funções <span class="code">rgb()</span>, <span class="code">rgba()</span>, <span class="code">hsl()</span>, <span class="code">hsla()</span>.</li>
+                </ul>
+            </li>
+            <li>O VSCode oferece auxílio visual para seleção de cores.</li>
+        </ul>
+
+        <h3>Representação de Cores</h3>
+        <ul>
+            <li><strong>RGB:</strong> <span class="code">rgb(vermelho, verde, azul)</span> - valores de 0 a 255.</li>
+            <li><strong>Hexadecimal:</strong> <span class="code">#RRGGBB</span> - representação hexadecimal do RGB.</li>
+            <li><strong>HSL:</strong> <span class="code">hsl(matiz, saturação%, luminosidade%)</span>.</li>
+            <li><strong>RGBA:</strong> <span class="code">rgba(vermelho, verde, azul, alfa)</span> - alfa para transparência (0 a 1).</li>
+            <li><strong>HSLA:</strong> <span class="code">hsla(matiz, saturação%, luminosidade%, alfa)</span> - alfa para transparência (0 a 1).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Gradientes em CSS</h2>
+        <ul>
+            <li>Utiliza a propriedade <span class="code">background-image</span>.</li>
+            <li>Funções:
+                <ul>
+                    <li><span class="code">linear-gradient(ângulo, cor1 posição, cor2 posição, ...)</span></li>
+                    <li><span class="code">radial-gradient(forma tamanho at posição, cor1 posição, cor2 posição, ...)</span></li>
+                </ul>
+            </li>
+            <li>Permite criar transições suaves entre cores.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Descobrindo Códigos de Cores</h2>
+        <ul>
+            <li>Extensão <a href="https://chrome.google.com/webstore/detail/colorzilla/cgodbnppffiemnkcgokeihnmbnfjfhan" class="link" target="_blank">Colorzilla</a> para Google Chrome.</li>
+            <li>Permite identificar o código de cores de qualquer elemento em uma página web.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Conclusão</h2>
+        <p>A escolha de cores é crucial no design web, afetando a experiência do usuário e a percepção do conteúdo. Compreender a psicologia das cores e a harmonia cromática, juntamente com as ferramentas CSS, é essencial para criar websites eficazes e visualmente agradáveis. A prática e a exploração são incentivadas.</p>
+    </section>
+</body>
+</html>

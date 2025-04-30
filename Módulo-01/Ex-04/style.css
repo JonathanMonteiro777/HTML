@@ -1,0 +1,72 @@
+/* estilos globais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Azul claro fundo geral*/
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #007bff; /*Azul primario para links*/
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* cabeçalho */
+header {
+    background-color: #f8f9fa; /* Cor de fundo do cabeçalho */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #6c757d; /* Cor da borda inferior */
+    margin-bottom: 5px;
+}
+
+header h1 {
+    margin: 0;
+    color: #0056b3; /* Cor primária para cabeçalhos */
+}
+
+/* conteúdo principal */
+main {
+    padding: 20px;
+}
+
+section.conteudo {
+    background-color: #f8f9fa; /* Cor de fundo das seções */
+    padding: 20px;
+    margin-bottom: 20px; /* Espaço entre as seções */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-secao {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff; /* Cor primária para titulos de seção */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    section.conteudo {
+        width: 100%; /* Garante que as seções ocupem toda a largura */
+    }
+}
+
+/* rodapé */
+footer {
+    background-color: #f8f9fa; /* Cor de fundo do rodapé */
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #6c757d; /* Cor da borda superior */
+    margin-top: 20px;
+}
