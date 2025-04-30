@@ -9,6 +9,7 @@ Aqui você encontrará **anotações**, **exercícios práticos** e **projetos d
 ## 📚 Conteúdo estudado até agora
 
 ### Módulo 1 – Fundamentos da Web
+
 - História da Internet
 - Como funciona a internet por trás dos navegadores
 - Introdução ao HTML5
@@ -20,6 +21,7 @@ Aqui você encontrará **anotações**, **exercícios práticos** e **projetos d
 - Imagens dinâmicas, áudio e vídeo
 
 ### Módulo 2 – Estilização com CSS3
+
 - Introdução ao CSS (inline, interno e externo)
 - Seletores e personalizações
 - Cores (nomes, hexadecimais, RGB, HSL)
@@ -29,6 +31,7 @@ Aqui você encontrará **anotações**, **exercícios práticos** e **projetos d
 - Primeiros projetos práticos com HTML + CSS
 
 ### Módulo 3 – Versionamento com Git e GitHub
+
 - Introdução ao Git e GitHub
 - Instalação e uso do GitHub Desktop
 - Criação de repositórios e primeiros commits
